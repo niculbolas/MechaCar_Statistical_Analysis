@@ -31,3 +31,27 @@ Looking a the total summary data, the variance for the PSI is 62.29356 for all 3
 
 ### Lot Summary
 ![](deliverable2_lot_summary.jpg)
+
+## T-Tests on Suspension Coils
+Looking at the T-Test on the overall data we see that there is a p-value of 0.06028, which is above the typical p-value cutoff of 0.05.  Thus we cannot reject the null hypothesis.  Thus we can conclude that there is no significant difference in the overall mean PSI of the 3 lots from 1500.
+
+Looking at the T-Test for lot 1 we see that there is a p-value of 1.  With a p-value this high we definately do not reject the null hypothesis and it is reasonable for us to conclude that the mean PSI value of this lot is almost exactly 1500.
+
+When we look at the T-Test done on lot 2 we see that it had a p-value of 0.6072.  With a p-value this high we cannot reject the null hypothesis and the mean PSI here is very close to the population value of 1500.
+
+Lastly, looking at the T-Test for lot 3 we see that it had a p-value of 0.04168.  Since this is below the cutoff of 0.05, we can reject the null hypothesis here and conclude with reasonable certainty that the mean PSI for this lot is below 1500.  The given 95% confidence interval suggests that the true mean is between 1492.431 and 1499.849 for this lot. 
+
+### Total T-Test
+![](deliverable3_totalttest.jpg)
+
+### Lot 1 T-Test
+![](deliverable3_lot1ttest.jpg)
+
+### Lot 2 T-Test
+![](deliverable3_lot2ttest.jpg)
+
+### Lot 3 T-Test
+![](deliverable3_lot3ttest.jpg)
+
+## Study Design: MechaCar vs Competition
+Several features that I believe are important when buying a car are the safety rating, fuel economy (mpg), hp.  People tend to want vehicles with high mpg, high safety, and high hp.  So what we could do is to compare those three statistics from the MechaCar brand to their competitors by using T-tests.  We could make the null hypothesis that there is no significant difference between brands for the given statistic and the alternative hypothesis is that there is a difference between brands.  We would then need to go collect data from our competitors brands in order to make the comparisons and perform the T-tests.  In order to produce the best results possible, we would need to collect data on all competing vehicles.
